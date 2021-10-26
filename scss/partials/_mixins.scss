@@ -1,0 +1,26 @@
+/* Mixins */
+@mixin box-style($box-bg, $heading-color, $btn-bg) {
+    border: 1px solid $color-border;
+    padding: $box-padding;
+    border-radius: $box-border-radius;
+    width: $box-width;
+    height: 250px;
+    margin-bottom: 25px;
+    background: $box-bg;
+
+    h2{
+        color: $heading-color;
+        font-size: $heading-title;
+        margin: 0;
+    }
+
+    a{
+        font-size: 18px;
+        color: $color-generic;
+        text-decoration: none;
+        border-radius: 5px;
+        padding: 9px 12px;
+        display: inline-block;
+        background: $btn-bg;
+    }
+}
